@@ -12,6 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:nbv_menu="@menu/menu"
+        app:nbv_text_color="@color/textcolor"
+        app:nbv_text_click_color="@color/green"
+        app:nbv_rg_background="@drawable/b"
         />
 
 </RelativeLayout>

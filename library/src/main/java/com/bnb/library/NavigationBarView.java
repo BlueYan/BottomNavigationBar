@@ -97,7 +97,8 @@ public class NavigationBarView extends RelativeLayout {
         mInflater = new MenuInflater(mContext);
         mInflater.inflater(resId); //解析xml并且获取数据
         List<Menu> menus = mInflater.getMenus();
-        if ( menus.size() > 5 ) {
+        Log.i(TAG, "menus = " + menus.size());
+        if ( menus.size() > 10 ) {
             throw new RuntimeException("The bottom menu can not be more than five");
         }
         mRadioButtons = new ArrayList<RadioButton>();
@@ -114,7 +115,7 @@ public class NavigationBarView extends RelativeLayout {
             mRb.setGravity(Gravity.CENTER);
             mRb.setPadding(0, Util.dp2px(mContext, 5), 0, Util.dp2px(mContext, 3)); //设置上下边距
             mRb.setTextSize(10); //设置文本大小
-            createColorStateList(mRb, normalColor, clickColor);
+            createColorStateList(mRb, clickColor, normalColor);
             if ( i == 0 ) {
                 mRb.setChecked(true);
             }

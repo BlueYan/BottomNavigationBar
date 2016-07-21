@@ -8,6 +8,7 @@ import android.os.Bundle;
 import com.bnb.demo.R;
 import com.bnb.demo.fragment.DiscoverFragment;
 import com.bnb.demo.fragment.HomeFragment;
+import com.bnb.demo.fragment.rFragment;
 import com.bnb.library.BaseMainActivity;
 import com.bnb.library.BaseMainFragment;
 import com.bnb.library.NavigationBarManager;
@@ -32,6 +33,15 @@ public class MainActivity extends BaseMainActivity {
         mFragments = new ArrayList<BaseMainFragment>();
         mFragments.add(HomeFragment.newInstance());
         mFragments.add(DiscoverFragment.newInstance());
+        mFragments.add(rFragment.newInstance());
         mManager = new NavigationBarManager(this, mFragments, mNavigationBarView);
+    }
+
+    /**
+     * 重写该方法，退出主Activity
+     */
+    @Override
+    public void onBackPressedSupport() {
+        finish();
     }
 }

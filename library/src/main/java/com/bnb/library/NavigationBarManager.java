@@ -39,6 +39,9 @@ public class NavigationBarManager {
         if ( mFragments.size() > 5 ) {
             throw new RuntimeException("The fragment can not be more than five");
         }
+        if ( mFragments.size() != mNavigationBarView.getmRadioButtons().size() ) {
+            throw new RuntimeException("The number of buttons and fragment is not consistent");
+        }
         initLoadRootFragment();
         List<RadioButton> mRadioButtons = mNavigationBarView.getmRadioButtons();
         for ( int i = 0; i < mRadioButtons.size(); i++ ) {

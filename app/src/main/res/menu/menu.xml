@@ -25,6 +25,20 @@
             android:icon="@drawable/discovered"
             android:title="朋友圈"/>
 
+
+    </group>
+
+    <group>
+
+        <item android:id="@+id/id_me"
+            android:icon="@drawable/me"
+            android:title="我"/>
+
+        <item android:id="@+id/id_med"
+            android:icon="@drawable/med"
+            android:title="我"/>
+
+
     </group>
 
 </menu>
