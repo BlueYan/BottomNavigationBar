@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.bnb.demo.MainActivity">
+    tools:context=".activity.MainActivity">
 
 
     <com.bnb.library.NavigationBarView
         android:id="@+id/id_nbv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
+        app:nbv_menu="@menu/menu"
         />
 
 </RelativeLayout>

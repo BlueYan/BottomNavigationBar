@@ -4,7 +4,13 @@
 
     <declare-styleable name="NavigationBarView">
 
-        <attr name="nbv_rb" format="reference"/>
+        <attr name="nbv_menu" format="reference"/>
+
+        <attr name="nbv_text_color" format="color|reference"/>
+
+        <attr name="nbv_text_click_color" format="color|reference"/>
+
+        <attr name="nbv_rg_background" format="reference"/>
 
     </declare-styleable>
 
